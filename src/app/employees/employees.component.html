@@ -1,0 +1,46 @@
+
+
+<label>name:</label>
+<input type="text"[(ngModel)]="name">
+
+<br>
+<label>age:</label>
+<input type="number"[(ngModel)]="age">
+<br>
+
+<label>company:</label>
+<input type="string" [(ngModel)]="company">
+<br> 
+<label>package:</label>
+<input type="number" [(ngModel)]="package">
+<br>
+
+<button class="btn btn-primary"(click)="register()">register</button>
+<br><br>
+<br>
+<button (click)="packagelowtohight()">package low to hight </button>
+<button (click)="packagehighttolow()">package hight to low </button>
+
+<table class="=table table-hover">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>company</th>
+            <th>package</th>
+            <th>deleteall
+                <button (click)="clear()">deleteall </button>
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee1 of employees; let i=index">
+            <td>{{ employee1.name}}</td>
+            <td>{{ employee1.age | ages}}</td>
+            <td>{{ employee1.company}}</td>
+            <td>{{employee1.package | package }}</td>
+            <td><button (click)="delete(i)">delete</button></td>
+        </tr>
+    </tbody>
+</table>

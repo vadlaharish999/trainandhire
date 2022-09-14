@@ -1,0 +1,22 @@
+.p{
+    height: 100vh;
+    width: 100wh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+form{
+     height: 50vh;
+    width: 30wh;
+    background-color: rgba(173, 20, 233, 0.952);
+     justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: blue;
+    color: white;
+     justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,13 @@
+div{
+    background-color: rgb(238, 232, 229);
+    height: 70px;
+    width: 900px;
+    margin: 40px;
+}
+.visited:hover{
+    background-color: solid rgb(54, 54, 155);
+
+}
+.unvisited{
+    background-color: rgb(112, 194, 156);
+}
