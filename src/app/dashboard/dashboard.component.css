@@ -4,11 +4,13 @@
     background-color: rgba(221, 22, 72, 0.61);
     display: FLEX;
     color: white;
+    overflow: auto;
 }
 .c1{
     background-color: black;
     width: 30vw;
     height: 100vh;
+    overflow: auto;
     
 }
 .c2{

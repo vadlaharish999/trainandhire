@@ -1,0 +1,11 @@
+<p>parent works!</p>
+<input type="text" [(ngModel)]="a">
+
+
+<app-star [rating]="1"></app-star>
+
+<p>{{b}}</p>
+
+<app-child [a]="a" (bEvent)="catch($event)"></app-child>
+
+
